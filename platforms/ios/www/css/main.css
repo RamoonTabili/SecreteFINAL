@@ -1,0 +1,84 @@
+body { /* #00DCFF #0064FF #008CFF */
+    max-width: 100%;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #428BCA;
+    overflow: hidden;
+}
+header {
+/*    display: block;*/
+/*    float: left;*/
+/*    margin: 0 auto;*/
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px auto;
+    background: -webkit-linear-gradient(-45deg, #744FCA, #428BCA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+h2{
+    font-size: 20px;
+    margin: auto;
+/*    width: 50%;*/
+/*    display: block;*/
+/*    float: left;*/
+/*    margin-left: 10px;*/
+}
+canvas {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #744FCA;
+}
+a.special{
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: white;
+    background: -webkit-linear-gradient(-45deg, #744FCA, #428BCA);
+}
+img.login-logo{
+    display: block;
+    width: 150px;
+    margin: 60px auto -25px auto;
+}
+#username {
+    text-align: center;
+    width: 100%;
+}
+#useremail {
+    text-align: center;
+    width: 100%;
+}
+#message {
+    text-align: center;
+    width: 100%;
+}
+#msg-list {
+    margin-top: 60px;
+}
+p.errMsg {
+    text-align: center;
+    margin: 10px;
+    color: red;
+}
+.icon-right {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+    margin: 0 auto;
+}
+.bar.bar-nav {
+    box-shadow: 0px 5px 80px -15px rgba(0,0,0,0.75);
+}
+.content > * {
+    -webkit-translate: translate3d(0,0,0);
+}
+#login-page{
+    margin-top: 250px;
+}

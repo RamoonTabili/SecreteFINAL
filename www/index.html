@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://griffis.edumedia.ca 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="UTF-8" name= "viewport" content= "width=device-width">
+    <title>SecreteMSG</title>
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+    <!-- your OWN CSS file comes last -->
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <header>
+       <img src="img/msg-logo.png" alt="Messenger Logo" class="login-logo">
+        <h1>Messenger</h1>
+        
+    </header>
+    
+    <div class="content" id="login-page">
+        <form class="input-group">
+            <div class="input">
+                <input id="username" type="text" placeholder="Username">
+                <input id="useremail" type="email" placeholder="Email">
+            </div>
+        </form>
+        <p class="errMsg"></p>
+      <a class="special login btn-block">Login</a>
+      <a class="special register btn-block">Register</a>
+    </div>
+    
+    <div class="modal" id="msg-page">
+        <header class="bar bar-nav">
+            <a class="icon icon-refresh pull-left msgRere"></a>
+            <a class="icon icon-compose pull-right msgNew"></a>
+            <h1 class="modalHeader">Messages</h1>
+        </header>
+        <div>
+            <ul class="table-view" id="msg-list"></ul>
+        </div>
+    </div>
+    
+    <div class="modal" id="msg-new">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right msgCancel"></a>
+            <h1 class="modalHeader">Send Message</h1>
+        </header>
+        <div class="content" id="msg-create">
+            <div class="content-padded">
+                <form class="input-group">
+                    <div class="input">
+                        <div class="picture">
+                            <canvas id="createMsg" width="300" height="300" class="msgPic"></canvas>
+                        </div>
+                        <select name="userlist" id="user-list"></select>
+                        <input id="message" type="text" placeholder="Message">
+                    </div>
+                </form>
+                
+                <p class="content-padded">
+<!--                    <button class="btn btn-negative btn-block btn-outlined msgCancel">-->
+<!--                        <span class="icon icon-close"> Cancel</span>-->
+<!--                    </button>-->
+                    <button class="btn btn-positive btn-block msgSend">
+                        <span class="icon icon-check"> Send</span>
+                    </button>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="msg-view">
+        <header class="bar bar-nav">
+            <a class="icon icon-close pull-right msgCancel"></a>
+            <h1 class="modalHeader">View Message</h1>
+        </header>
+        <div class="content" id="msg-info">
+            <div class="content-padded">
+                <form class="input-group">
+                    <div class="input">
+                        <div class="picture">
+                            <canvas id="viewMsg" width="300" height="300" class="picLoad"></canvas>
+                        </div>
+<!--                        <select name="userlist" id="user-list"></select>-->
+                        <p id="message" class="picMessage">Text Placeholder</p>
+                    </div>
+                </form>
+                
+                <p class="content-padded">
+                    <button class="btn btn-negative btn-block btn-outlined msgDelete">
+                        <span class="icon icon-close"> Delete</span>
+                    </button>
+<!--                    <button class="btn btn-positive btn-block msgSend">-->
+<!--                        <span class="icon icon-check"> Send</span>-->
+<!--                    </button>-->
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <time datetime="2017"></time>
+    </footer>
+    <script src="js/ratchet.min.js"></script>
+    <script src="canvas-to-blob.min.js"></script>
+<!--    <script src="canvas-to-blob.min.js.map"></script>-->
+    <script src="js/index.js"></script>
+    <script src="js/bits.js"></script>
+    <script src="cordova.js"></script>
+</body>
+</html>
