@@ -15,7 +15,16 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "ca.edumedia.tabi0011"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": "Ayylmao",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "ca.edumedia.tabi0011"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ca.edumedia.tabi0011"
+        }
+    }
 }
